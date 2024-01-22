@@ -1,0 +1,46 @@
+.foot{
+    backdrop-filter: blur(3px); /* Adjust the blur amount as needed */
+    background-color: var(--blurcolor);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divTransparentDark{
+    background-color: var(--headercolor);
+}
+.contain{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.cont1 h1{
+    font-size: 20px;
+}
+.cont a{
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+.title{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.title:hover{
+    color: rgb(82, 149, 197);
+}
+.list{
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+.list:hover{
+    color: rgb(82, 149, 197);
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}

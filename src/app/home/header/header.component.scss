@@ -1,0 +1,177 @@
+/*navigation start*/
+header {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(3px); /* Adjust the blur amount as needed */
+    background-color: var(--blurcolor); /* Adjust the background color and opacity */
+  }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 0px 20px;
+    border-right: 1px solid var(--lmcolor);
+    transition: 0.3s;
+}
+.divTransparentDark{
+    background-color: var(--headercolor);
+  }
+.darklogo{
+    border-right: 1px solid var(--nmcolor);
+}
+.logo h1{
+    font-size: 20px;
+}
+.logo a{
+    color: var(--lmcolor);
+    text-decoration: none;
+}
+.list{
+    width: 15vw;
+    height: 100%;
+    display: flex;
+}
+.list1{
+    height: 100%;
+    display: flex;
+}
+.list li{
+    width: calc(15vw/3);
+    height: 100%;
+    list-style: none;
+}
+.list1 li{
+    list-style: none;
+    height: 100%;
+    padding: 0 20px;
+}
+.list1 button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.list a,.list1 a{
+    height: 100%;
+    transition: 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--lmcolor);
+    transition: 0.2s;
+    font-weight: 500;
+}
+.bord{
+    transition: 0.09s ease;
+    padding: 3px;
+    width: 70%;
+    text-align: center;
+}
+.bord:hover{
+    filter: drop-shadow(0 0 5px white);
+    transform: translateY(2px);
+    border-bottom: 2px solid rgb(82, 149, 197);
+    font-weight: 600;
+}
+.material-symbols-outlined{
+    font-weight:200;
+    font-size: 2rem;
+}
+
+/*navigation end*/
+
+
+
+
+//logo animation start
+.logo h1
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -235deg,
+    rgb(40, 63, 90) 0%,
+    rgb(47, 78, 120) 10%,
+    rgb(53, 104, 154) 20%,
+    rgb(54, 123, 163) 30%,
+    rgb(84, 162, 207) 40%,
+    rgb(149, 231, 239) 50%,
+    rgb(84, 162, 207) 60%,
+    rgb(54, 123, 163) 70%,
+    rgb(53, 104, 154) 80%,
+    rgb(47, 78, 120) 90%,
+    rgb(40, 63, 90)100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes animator{
+      0%{
+          opacity: 0;
+          transform: translateX(10%);
+      }100%{
+          opacity: 1;
+          transform: translateX(0%);
+      }
+  }
+
+//logo animation end
+
+@media only screen and (max-width: 588px) {
+    header{
+        display: block;
+    }
+    .logo{
+        border: none;
+    }
+    .list li,.list a{
+        width: calc(100vw/3);
+    }
+    .cart{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header{
+        display: block;
+    }
+    .logo{
+        border: none;
+    }
+    .list li,.list a{
+        width: calc(100vw/3);
+    }
+    .cart{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+}
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
+    .list li{
+        padding: 0px 15px;
+    }
+}

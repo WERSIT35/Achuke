@@ -1,0 +1,46 @@
+.tut,.picture{
+    min-width: 200px;
+    min-height: 200px;
+    width: 600px;
+}
+article{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tut{
+    text-decoration: none;
+    // backdrop-filter: blur(3px);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.forback{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--blurcolor);
+    backdrop-filter: blur(3px);
+    display: flex;
+}
+.description{
+    padding: 5px 30px;
+}
+.description h2{
+    text-wrap: nowrap;
+}
+.divTransparentDark{
+    background-color: var(--headercolor);
+}
+.title,.price{
+    padding: 10px 0;
+    margin: 5px 30px;
+}
+.title h2{
+    font-size: 2.5rem;
+}
+.picture img{
+    width: 100%;
+    border-radius: 5px;
+}
